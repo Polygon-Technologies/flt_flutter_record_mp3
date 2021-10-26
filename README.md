@@ -62,4 +62,7 @@ RecordMp3.instance.stop();
 
 ```
 
+### Updated Features
+Ability to set Bitrate and SampleRate
+
 
