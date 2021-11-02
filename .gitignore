@@ -5,6 +5,7 @@
 .pub/
 .idea
 pubspec.lock
+example/.flutter-plugins-dependencies
 
 
 build/
