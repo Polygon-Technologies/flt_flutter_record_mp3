@@ -175,9 +175,11 @@ class _MyAppState extends State<MyApp> {
   String recordFilePath;
 
   void play() {
-    if (recordFilePath != null && File(recordFilePath).existsSync()) {
-      AudioPlayer audioPlayer = AudioPlayer();
-      audioPlayer.play(recordFilePath, isLocal: true);
+    if (recordFilePath != null && File(recordFilePath).existsSync()) 
+    {      
+      AudioPlayer audioPlayer = AudioPlayer();      
+      
+      audioPlayer.play(DeviceFileSource(recordFilePath));      
     }
   }
 
